@@ -2,7 +2,8 @@
 const mongoose = require("mongoose");
 
 module.exports = {
-  database: process.env.MONGO_DB,
+  database: 'mongodb://localhost:27017/myapp',
+  //process.env.MONGO_DB,
 
   options: {
     reconnectTries: Number.MAX_VALUE, // Never stop trying to reconnect
